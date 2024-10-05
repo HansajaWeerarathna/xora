@@ -29,7 +29,7 @@ jobs:
             exit 0
           elif [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT  # Changed from 'ci' to 'install'
             echo "runner=npx" >> $GITHUB_OUTPUT
             exit 0
           else
