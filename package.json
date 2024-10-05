@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "next": "^14.0.0",
     "clsx": "^2.1.1",
     "pretier": "^0.0.1",
     "prettier": "^3.3.3",
