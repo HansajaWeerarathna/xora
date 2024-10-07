@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
@@ -9,6 +9,5 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Override the default install command
 [build.lifecycle]
   onPreBuild = "npm ci --legacy-peer-deps"
