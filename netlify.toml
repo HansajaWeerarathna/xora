@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Add this section to modify the installation command
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+# Add custom installation command
+[build.lifecycle]
+  onInstall = "npm install --legacy-peer-deps"
