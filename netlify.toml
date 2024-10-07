@@ -4,11 +4,11 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
 
-# Add this section to modify the installation command
 [[plugins]]
-package = "@netlify/plugin-nextjs"
+  package = "@netlify/plugin-nextjs"
 
-# Add custom installation command
+# Override the default install command
 [build.lifecycle]
-  onInstall = "npm install --legacy-peer-deps"
+  onPreBuild = "npm ci --legacy-peer-deps"
