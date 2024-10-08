@@ -39,7 +39,7 @@
 
 ## 📸 Demo
 
-Visit the [**🔗 Live Demo**](https://your-demo-link.com) to experience the app in action.
+Visit the [**🔗 Live Demo**](https://hansajaweerarathna.github.io/xora/) to experience the app in action.
 
 ---
 
