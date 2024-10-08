@@ -1,5 +1,7 @@
 import { Element, Link as LinkScroll } from "react-scroll";
 import Button from "../components/Button.jsx";
+import hero from "../../public/images/hero.png";
+import zap from "../../public/images/zap.svg";
 
 const Hero = () => {
   return (
@@ -18,16 +20,12 @@ const Hero = () => {
               learn, and surprisingly powerful.
             </p>
             <LinkScroll to="features" offset={-100} spy smooth>
-              <Button icon="/images/zap.svg">Try it now</Button>
+              <Button icon={zap}>Try it now</Button>
             </LinkScroll>
           </div>
 
           <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
-            <img
-              src="/images/hero.png"
-              className="size-1230 max-lg:h-auto"
-              alt="hero"
-            />
+            <img src={hero} className="size-1230 max-lg:h-auto" alt="hero" />
           </div>
         </div>
       </Element>

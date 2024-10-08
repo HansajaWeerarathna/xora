@@ -1,6 +1,9 @@
 import { Link as LinkScroll } from "react-scroll";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import xora from "../../public/images/xora.svg";
+import bgOutlines from "../../public/images/bg-outlines.svg";
+import bgOutlinesFill from "../../public/images/bg-outlines-fill.png";
 
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -40,7 +43,7 @@ const Header = () => {
     >
       <div className="container flex h-14 items-center max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
-          <img src="/images/xora.svg" width={115} height={55} alt="logo" />
+          <img src={xora} width={115} height={55} alt="logo" />
         </a>
 
         <div
@@ -67,12 +70,7 @@ const Header = () => {
                       "max-lg:hidden transition-transform duration-500 cursor-pointer",
                     )}
                   >
-                    <img
-                      src="/images/xora.svg"
-                      width={160}
-                      height={55}
-                      alt="logo"
-                    />
+                    <img src={xora} width={160} height={55} alt="logo" />
                   </LinkScroll>
                 </li>
                 <li className="nav-li">
@@ -84,14 +82,14 @@ const Header = () => {
             </nav>
             <div className="lg:hidden block absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-290px] -translate-y-1/2 rotate-90">
               <img
-                src="/images/bg-outlines.svg"
+                src={bgOutlines}
                 width={960}
                 height={380}
                 alt="outline"
                 className="relative z-2"
               />
               <img
-                src="/images/bg-outlines-fill.png"
+                src={bgOutlinesFill}
                 width={960}
                 height={380}
                 alt="outline"
@@ -105,7 +103,7 @@ const Header = () => {
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
           <img
-            src={`/images/${isOpen ? "close" : "magic"}.svg`}
+            src={`${import.meta.env.BASE_URL}images/${isOpen ? "close" : "magic"}.svg`}
             alt="menu icon"
             className="size-1/2 object-contain"
           />
