@@ -2,7 +2,7 @@
 
 <div >
   <br />
-          <img src="https://github.com/user-attachments/assets/a582919b-1bdf-4cb2-af44-69b2159cf109" alt="Project Banner">
+          <img src="public/images/landing page.png" height={200} width={800} alt="Project Banner">
     
   <br />
 
